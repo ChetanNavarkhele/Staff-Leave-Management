@@ -29,6 +29,26 @@
       "department": "marketing",
       "id": "madhuriak",
       "password": "12345"
+    },
+    {
+      "designation": "staff",
+      "firstName": "Mayuri",
+      "lastName": "Navarkhele",
+      "email": "mayuri@gmail.com",
+      "contact": "1212121212",
+      "department": "marketing",
+      "id": "mayurivn",
+      "password": "12345"
+    },
+    {
+      "designation": "staff",
+      "firstName": "a",
+      "lastName": "b",
+      "email": "a@b.com",
+      "contact": "123",
+      "department": "sales",
+      "id": "ab",
+      "password": "123"
     }
   ],
   "loginUser": [],
