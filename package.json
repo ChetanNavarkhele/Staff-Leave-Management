@@ -16,10 +16,16 @@
     "react-router-dom": "^6.15.0",
     "react-scripts": "5.0.1",
     "react-toastify": "^9.1.3",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "clone": "^2.1.2",
+    "json-server": "^0.17.1"
   },
   "scripts": {
-    "start": "react-scripts start",
+  
+  "dev": "NODE_ENV=development node server.js",
+    "start": "NODE_ENV=production node server.js",
+    "watch": "json-server db.json --port=8000",
+    
     "predeploy": "npm run build",
   "deploy": "gh-pages -d build",
     "build": "react-scripts build",
