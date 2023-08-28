@@ -24,8 +24,7 @@
     "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "server": "https://github.com/ChetanNavarkhele/Staff-Leave-Management/blob/main/db.json"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
