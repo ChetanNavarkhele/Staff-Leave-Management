@@ -13,7 +13,7 @@ const Login = () => {
         e.preventDefault();
         if (validate()) {
             // console.log('proceed further');
-            fetch("http://localhost:8000/users/" + id).then((res) => {
+            fetch("https://my-json-server.typicode.com/ChetanNavarkhele/Staff-Leave-Management/users/" + id).then((res) => {
                 return res.json();
             }).then((resp) => {
                 console.log(resp);

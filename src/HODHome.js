@@ -17,7 +17,7 @@ const HODHome = () => {
     // const [approvedStatus, setApprovedStatus] = useState("Pending");
 
     useEffect(() => {
-        fetch("http://localhost:8000/leaves").then((res) => {
+        fetch("https://my-json-server.typicode.com/ChetanNavarkhele/Staff-Leave-Management/leaves").then((res) => {
             return res.json();
         }).then((resp) => {
             console.log(resp);
@@ -34,7 +34,7 @@ const HODHome = () => {
     const handleApprove = (e) => {
         console.log(e.target.id);
 
-        fetch("http://localhost:8000/leaves/" + e.target.id, {
+        fetch("https://my-json-server.typicode.com/ChetanNavarkhele/Staff-Leave-Management/leaves/" + e.target.id, {
             headers: {
                 Accept: "application/json",
                 "Content-Type": "application/json"
@@ -52,7 +52,7 @@ const HODHome = () => {
             console.log(data);
         });
 
-        fetch("http://localhost:8000/leaves").then((res) => {
+        fetch("https://my-json-server.typicode.com/ChetanNavarkhele/Staff-Leave-Management/leaves").then((res) => {
             return res.json();
         }).then((resp) => {
             console.log(resp);
@@ -67,7 +67,7 @@ const HODHome = () => {
     const handleReject = (e) => {
         console.log(e.target.id);
 
-        fetch("http://localhost:8000/leaves/" + e.target.id, {
+        fetch("https://my-json-server.typicode.com/ChetanNavarkhele/Staff-Leave-Management/leaves/" + e.target.id, {
             headers: {
                 Accept: "application/json",
                 "Content-Type": "application/json"
@@ -85,7 +85,7 @@ const HODHome = () => {
             console.log(data);
         });
 
-        fetch("http://localhost:8000/leaves").then((res) => {
+        fetch("https://my-json-server.typicode.com/ChetanNavarkhele/Staff-Leave-Management/leaves").then((res) => {
             return res.json();
         }).then((resp) => {
             console.log(resp);

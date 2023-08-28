@@ -47,7 +47,7 @@ const StaffHome = () => {
     // }, [])
 
     useEffect(() => {
-        fetch("http://localhost:8000/leaves").then((res) => {
+        fetch("https://my-json-server.typicode.com/ChetanNavarkhele/Staff-Leave-Management/leaves").then((res) => {
             return res.json();
         }).then((resp) => {
             console.log(resp.filter((leave)=> leave.username === loginUser.id));
@@ -60,7 +60,7 @@ const StaffHome = () => {
     const handleLeave = () => {
         setShow(false);
         const leaveObj = { username, startDate, endDate, days, reason, status, firstName, lastName}
-        fetch("http://localhost:8000/leaves", {
+        fetch("https://my-json-server.typicode.com/ChetanNavarkhele/Staff-Leave-Management/leaves", {
             method: 'POST',
             headers: { 'content-type': 'application/json' },
             body: JSON.stringify(leaveObj)
