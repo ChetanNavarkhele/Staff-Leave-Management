@@ -63,7 +63,9 @@ const Register = () => {
         if (isValidate()) {
             fetch("https://my-json-server.typicode.com/ChetanNavarkhele/leave-database/users", {
                 method: 'POST',
-                headers: { 'content-type': 'application/json' },
+                headers: { 'Access-Control-Allow-Origin':'*',
+                Accept: "application/json;odata.metadata=full",
+                "Content-Type": "application/json" },
                 body: JSON.stringify(regObj)
             }).then((res) => {
                 toast.success('Registered Successfully.');

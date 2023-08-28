@@ -36,7 +36,8 @@ const HODHome = () => {
 
         fetch("http://localhost:8000/leaves/" + e.target.id, {
             headers: {
-                Accept: "application/json",
+                'Access-Control-Allow-Origin':'*',
+                Accept: "application/json;odata.metadata=full",
                 "Content-Type": "application/json"
             },
             method: "PATCH",
@@ -69,7 +70,8 @@ const HODHome = () => {
 
         fetch("http://localhost:8000/leaves/" + e.target.id, {
             headers: {
-                Accept: "application/json",
+                'Access-Control-Allow-Origin':'*',
+                Accept: "application/json;odata.metadata=full",
                 "Content-Type": "application/json"
             },
             method: "PATCH",
