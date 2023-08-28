@@ -19,6 +19,16 @@
       "department": "finance",
       "id": "vasantmn",
       "password": "12345"
+    },
+    {
+      "designation": "staff",
+      "firstName": "Madhuri",
+      "lastName": "Kale",
+      "email": "madhuri@gmail.com",
+      "contact": "1234567890",
+      "department": "marketing",
+      "id": "madhuriak",
+      "password": "12345"
     }
   ],
   "loginUser": [],
