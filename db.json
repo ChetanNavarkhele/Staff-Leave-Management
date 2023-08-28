@@ -1,0 +1,49 @@
+{
+  "users": [
+    {
+      "designation": "staff",
+      "firstName": "Chetan",
+      "lastName": "Navarkhele",
+      "email": "chetan@gmail.com",
+      "contact": "12345",
+      "department": "finance",
+      "id": "chetanvn",
+      "password": "12345"
+    },
+    {
+      "designation": "hod",
+      "firstName": "Vasant",
+      "lastName": "Navarkhele",
+      "email": "vasant@gmail.com",
+      "contact": "12345",
+      "department": "finance",
+      "id": "vasantmn",
+      "password": "12345"
+    }
+  ],
+  "loginUser": [],
+  "leaves": [
+    {
+      "username": "chetanvn",
+      "startDate": "2023-08-29",
+      "endDate": "2023-08-30",
+      "days": 2,
+      "reason": "Not well",
+      "status": "Approved",
+      "firstName": "Chetan",
+      "lastName": "Navarkhele",
+      "id": 1
+    },
+    {
+      "username": "chetanvn",
+      "startDate": "2023-08-31",
+      "endDate": "2023-08-31",
+      "days": 1,
+      "reason": "family trip",
+      "status": "Rejected",
+      "firstName": "Chetan",
+      "lastName": "Navarkhele",
+      "id": 2
+    }
+  ]
+}

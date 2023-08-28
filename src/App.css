@@ -1,10 +1,23 @@
 .App {
-  text-align: center;
+  text-align: left;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+.approve{
+  color: green;
+  font-weight: bold;
+}
+.approve{
+  color: red;
+  font-weight: bold;
+}
+
+label, span{
+  font-weight: 600;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -26,6 +39,28 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.errmsg{
+  color: red;
+}
+
+.app-check{
+  height: 12px;
+  width: 30px;
+  margin: 2px;
+}
+
+.header{
+  width:100%;
+  background-color: rgb(7, 96, 137);
+  color: white;
+  padding: 1%;
+}
+a{
+  text-decoration: none !important;
+  color: white !important;
+  padding: 2px;
 }
 
 @keyframes App-logo-spin {
