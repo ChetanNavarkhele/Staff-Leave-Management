@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Staff-Leave-Management/static/css/main.b275d1d9.css",
-    "main.js": "/Staff-Leave-Management/static/js/main.f6557d24.js",
+    "main.js": "/Staff-Leave-Management/static/js/main.1cdfedd4.js",
     "static/js/787.635aedaa.chunk.js": "/Staff-Leave-Management/static/js/787.635aedaa.chunk.js",
     "index.html": "/Staff-Leave-Management/index.html",
     "main.b275d1d9.css.map": "/Staff-Leave-Management/static/css/main.b275d1d9.css.map",
-    "main.f6557d24.js.map": "/Staff-Leave-Management/static/js/main.f6557d24.js.map",
+    "main.1cdfedd4.js.map": "/Staff-Leave-Management/static/js/main.1cdfedd4.js.map",
     "787.635aedaa.chunk.js.map": "/Staff-Leave-Management/static/js/787.635aedaa.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b275d1d9.css",
-    "static/js/main.f6557d24.js"
+    "static/js/main.1cdfedd4.js"
   ]
 }
