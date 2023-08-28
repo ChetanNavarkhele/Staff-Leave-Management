@@ -61,7 +61,7 @@ const Register = () => {
         let regObj = { designation, firstName, lastName, email, contact, department, id, password };
         // console.log(regObj);
         if (isValidate()) {
-            fetch("https://my-json-server.typicode.com/ChetanNavarkhele/Staff-Leave-Management/users", {
+            fetch("http://localhost:8000/users", {
                 method: 'POST',
                 headers: { 'content-type': 'application/json' },
                 body: JSON.stringify(regObj)
@@ -76,7 +76,7 @@ const Register = () => {
 
     const handleAvailability = (e) => {
         console.log(e.target.value);
-        fetch("https://my-json-server.typicode.com/ChetanNavarkhele/Staff-Leave-Management/users").then((res) => {
+        fetch("http://localhost:8000/users").then((res) => {
                 return res.json();
             }).then((resp) => {
                 console.log(resp);
