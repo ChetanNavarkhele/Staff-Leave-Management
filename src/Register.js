@@ -61,10 +61,9 @@ const Register = () => {
         let regObj = { designation, firstName, lastName, email, contact, department, id, password };
         // console.log(regObj);
         if (isValidate()) {
-            fetch("http://my-json-server.typicode.com/ChetanNavarkhele/leave-database/users", {
+            fetch("http://leave-database-be372-default-rtdb.asia-southeast1.firebasedatabase.app/users", {
                 method: 'POST',
                 headers: {
-                    'Access-Control-Allow-Origin': '*',
                      Accept: "application/json",
                     "Content-Type": "application/json"
                 },
@@ -80,7 +79,7 @@ const Register = () => {
 
     const handleAvailability = (e) => {
         console.log(e.target.value);
-        fetch("http://my-json-server.typicode.com/ChetanNavarkhele/leave-database/users").then((res) => {
+        fetch("http://leave-database-be372-default-rtdb.asia-southeast1.firebasedatabase.app/users").then((res) => {
             return res.json();
         }).then((resp) => {
             console.log(resp);
