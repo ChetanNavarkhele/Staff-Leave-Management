@@ -24,14 +24,17 @@ const Login = () => {
                     userArray.push(resp[key]);
                     console.log(userArray);
                 }
-                // sessionStorage.setItem("firstName", resp.firstName);
-                // sessionStorage.setItem("lastName", resp.lastName);
-                if (Object.keys(resp).length === 0) {
+                const user = userArray.filter(user => user.id === id)
+                sessionStorage.setItem("firstName", resp.firstName);
+                sessionStorage.setItem("lastName", resp.lastName);
+                if (Object.keys(userArray).length === 0) {
                     toast.error('Please enter valid username');
                 } else {
-                    if (resp.password === password) {
+                    const user = userArray.filter(user => user.id === id)
+                    console.log(user);
+                    if (user.password === password) {
                         toast.success('Success!');
-                        resp.designation === 'staff' ? navigate('/stafflogin') : navigate('/hodlogin');
+                        user.designation === 'staff' ? navigate('/stafflogin') : navigate('/hodlogin');
                     } else {
                         toast.error('Please enter valid credentials')
                     }
