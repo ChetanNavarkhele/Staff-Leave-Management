@@ -50,7 +50,7 @@ const Register = () => {
             errorMsg += 'Password '
         }
 
-        if(!isProceed){
+        if (!isProceed) {
             toast.warning(errorMsg);
         }
         return isProceed;
@@ -61,36 +61,38 @@ const Register = () => {
         let regObj = { designation, firstName, lastName, email, contact, department, id, password };
         // console.log(regObj);
         if (isValidate()) {
-            fetch("https://fetch-api-fda75-default-rtdb.asia-southeast1.firebasedatabase.app/users", {
+            fetch("https://my-json-server.typicode.com/ChetanNavarkhele/leave-database/users", {
                 method: 'POST',
-                headers: { 'Access-Control-Allow-Origin':'*',
-                Accept: "application/json;odata.metadata=full",
-                "Content-Type": "application/json" },
+                headers: {
+                    'Access-Control-Allow-Origin': '*',
+                     Accept: "application/json",
+                    "Content-Type": "application/json"
+                },
                 body: JSON.stringify(regObj)
             }).then((res) => {
                 toast.success('Registered Successfully.');
                 navigate('/login');
             }).catch((err) => {
-                toast.error('Failed:'+err.message);
+                toast.error('Failed:' + err.message);
             });
         }
     }
 
     const handleAvailability = (e) => {
         console.log(e.target.value);
-        fetch("https://fetch-api-fda75-default-rtdb.asia-southeast1.firebasedatabase.app/users").then((res) => {
-                return res.json();
-            }).then((resp) => {
-                console.log(resp);
-                if(e.target.value === '' || e.target.value === null){
-                    toast.error('Username can not be empty')
-                }
-                let findUser = resp.filter(user => user.id === e.target.value);
-                console.log(findUser);
-                if(findUser.length !== 0){toast.error('This username has already been taken')};
-            }).catch((err) => {
-                toast.error('Login Failed Due To :' + err.message);
-            });
+        fetch("https://my-json-server.typicode.com/ChetanNavarkhele/leave-database/users").then((res) => {
+            return res.json();
+        }).then((resp) => {
+            console.log(resp);
+            if (e.target.value === '' || e.target.value === null) {
+                toast.error('Username can not be empty')
+            }
+            let findUser = resp.filter(user => user.id === e.target.value);
+            console.log(findUser);
+            if (findUser.length !== 0) { toast.error('This username has already been taken') };
+        }).catch((err) => {
+            toast.error('Login Failed Due To :' + err.message);
+        });
     }
 
     return (
