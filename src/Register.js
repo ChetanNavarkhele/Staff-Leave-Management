@@ -86,6 +86,9 @@ const Register = () => {
             if (e.target.value === '' || e.target.value === null) {
                 toast.error('Username can not be empty')
             }
+            for (const key in resp){
+                console.log(key);
+            }
             let findUser = resp.filter(user => user.id === e.target.value);
             console.log(findUser);
             if (findUser.length !== 0) { toast.error('This username has already been taken') };
