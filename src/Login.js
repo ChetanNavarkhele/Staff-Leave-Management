@@ -13,7 +13,7 @@ const Login = () => {
         e.preventDefault();
         if (validate()) {
             // console.log('proceed further');
-            fetch("http://localhost:8000/users/" + id).then((res) => {
+            fetch("https://fetch-api-fda75-default-rtdb.asia-southeast1.firebasedatabase.app/users/" + id).then((res) => {
                 return res.json();
             }).then((resp) => {
                 console.log(resp);
