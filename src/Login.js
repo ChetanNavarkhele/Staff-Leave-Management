@@ -13,11 +13,14 @@ const Login = () => {
         e.preventDefault();
         if (validate()) {
             // console.log('proceed further');
-            fetch("https://leave-database-be372-default-rtdb.asia-southeast1.firebasedatabase.app/users/" + id +".json").then((res) => {
+            fetch("https://leave-database-be372-default-rtdb.asia-southeast1.firebasedatabase.app/users.json").then((res) => {
                 return res.json();
             }).then((resp) => {
                 console.log(resp);
-
+                for (const key in resp){
+                    console.log(key);
+                    console.log(resp[key]);
+                }
                 sessionStorage.setItem("firstName", resp.firstName);
                 sessionStorage.setItem("lastName", resp.lastName);
                 if (Object.keys(resp).length === 0) {
