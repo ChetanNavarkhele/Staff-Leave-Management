@@ -61,7 +61,7 @@ const Register = () => {
         let regObj = { designation, firstName, lastName, email, contact, department, id, password };
         // console.log(regObj);
         if (isValidate()) {
-            fetch("https://my-json-server.typicode.com/ChetanNavarkhele/leave-database/users", {
+            fetch("http://my-json-server.typicode.com/ChetanNavarkhele/leave-database/users", {
                 method: 'POST',
                 headers: {
                     'Access-Control-Allow-Origin': '*',
@@ -80,7 +80,7 @@ const Register = () => {
 
     const handleAvailability = (e) => {
         console.log(e.target.value);
-        fetch("https://my-json-server.typicode.com/ChetanNavarkhele/leave-database/users").then((res) => {
+        fetch("http://my-json-server.typicode.com/ChetanNavarkhele/leave-database/users").then((res) => {
             return res.json();
         }).then((resp) => {
             console.log(resp);
