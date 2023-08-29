@@ -21,8 +21,8 @@ const Login = () => {
                     console.log(key);
                     console.log(resp[key]);
                 }
-                sessionStorage.setItem("firstName", resp.firstName);
-                sessionStorage.setItem("lastName", resp.lastName);
+                // sessionStorage.setItem("firstName", resp.firstName);
+                // sessionStorage.setItem("lastName", resp.lastName);
                 if (Object.keys(resp).length === 0) {
                     toast.error('Please enter valid username');
                 } else {
