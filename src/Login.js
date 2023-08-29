@@ -7,6 +7,7 @@ const Login = () => {
     const [id, updateId] = useState("");
     const [password, updatePassword] = useState("");
 
+    const userArray = [];
     const navigate = useNavigate();
 
     const proceedLogin = (e) => {
@@ -20,6 +21,8 @@ const Login = () => {
                 for (const key in resp){
                     console.log(key);
                     console.log(resp[key]);
+                    userArray.push(resp[key]);
+                    console.log(userArray);
                 }
                 // sessionStorage.setItem("firstName", resp.firstName);
                 // sessionStorage.setItem("lastName", resp.lastName);
