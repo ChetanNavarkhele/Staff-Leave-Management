@@ -61,7 +61,7 @@ const Register = () => {
         let regObj = { designation, firstName, lastName, email, contact, department, id, password };
         // console.log(regObj);
         if (isValidate()) {
-            fetch("https://leave-database-be372-default-rtdb.asia-southeast1.firebasedatabase.app/users.json", {
+            fetch("https://chetannavarkhele.github.io/leave-database-new/leave-database.json/users", {
                 method: 'POST',
                 headers: {
                      Accept: "application/json",
