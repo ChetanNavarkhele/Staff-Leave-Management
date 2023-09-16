@@ -40,9 +40,7 @@ const Login = () => {
                     }
                 }
 
-            }).catch((err) => {
-                toast.error('Login Failed Due To :' + err.message);
-            });
+            })
         }
         let logObj = { id, password };
         sessionStorage.setItem("loginUser", JSON.stringify(logObj));
