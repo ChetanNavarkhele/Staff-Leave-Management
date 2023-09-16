@@ -92,9 +92,7 @@ const Register = () => {
             let findUser = resp.filter(user => user.id === e.target.value);
             console.log(findUser);
             if (findUser.length !== 0) { toast.error('This username has already been taken') };
-        }).catch((err) => {
-            toast.error('Login Failed Due To :' + err.message);
-        });
+        })
     }
 
     return (
