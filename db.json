@@ -1,89 +1,9 @@
 {
   "users": [
-    {
-      "designation": "staff",
-      "firstName": "Chetan",
-      "lastName": "Navarkhele",
-      "email": "chetan@gmail.com",
-      "contact": "12345",
-      "department": "finance",
-      "id": "chetanvn",
-      "password": "12345"
-    },
-    {
-      "designation": "hod",
-      "firstName": "Vasant",
-      "lastName": "Navarkhele",
-      "email": "vasant@gmail.com",
-      "contact": "12345",
-      "department": "finance",
-      "id": "vasantmn",
-      "password": "12345"
-    },
-    {
-      "designation": "staff",
-      "firstName": "Madhuri",
-      "lastName": "Kale",
-      "email": "madhuri@gmail.com",
-      "contact": "1234567890",
-      "department": "marketing",
-      "id": "madhuriak",
-      "password": "12345"
-    },
-    {
-      "designation": "staff",
-      "firstName": "Mayuri",
-      "lastName": "Navarkhele",
-      "email": "mayuri@gmail.com",
-      "contact": "1212121212",
-      "department": "marketing",
-      "id": "mayurivn",
-      "password": "12345"
-    },
-    {
-      "designation": "staff",
-      "firstName": "a",
-      "lastName": "b",
-      "email": "a@b.com",
-      "contact": "123",
-      "department": "sales",
-      "id": "ab",
-      "password": "123"
-    },
-    {
-      "designation": "hod",
-      "firstName": "Ravi",
-      "lastName": "Niturkar",
-      "email": "ravi@gmail.com",
-      "contact": "121345",
-      "department": "sales",
-      "id": "ravin",
-      "password": "12345"
-    }
+    
   ],
   "loginUser": [],
   "leaves": [
-    {
-      "username": "chetanvn",
-      "startDate": "2023-08-29",
-      "endDate": "2023-08-30",
-      "days": 2,
-      "reason": "Not well",
-      "status": "Approved",
-      "firstName": "Chetan",
-      "lastName": "Navarkhele",
-      "id": 1
-    },
-    {
-      "username": "chetanvn",
-      "startDate": "2023-08-31",
-      "endDate": "2023-08-31",
-      "days": 1,
-      "reason": "family trip",
-      "status": "Rejected",
-      "firstName": "Chetan",
-      "lastName": "Navarkhele",
-      "id": 2
-    }
+    
   ]
 }
