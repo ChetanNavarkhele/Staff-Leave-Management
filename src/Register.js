@@ -61,7 +61,7 @@ const Register = () => {
         let regObj = { designation, firstName, lastName, email, contact, department, id, password };
         // console.log(regObj);
         if (isValidate()) {
-            fetch("https://chetannavarkhele.github.io/leave-database-new/leave-database.json/users", {
+            fetch("https://my-json-server.typicode.com/ChetanNavarkhele/leave-database/users", {
                 method: 'POST',
                 headers: {
                      Accept: "application/json",
