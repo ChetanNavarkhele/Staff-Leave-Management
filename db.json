@@ -49,6 +49,16 @@
       "department": "sales",
       "id": "ab",
       "password": "123"
+    },
+    {
+      "designation": "hod",
+      "firstName": "Ravi",
+      "lastName": "Niturkar",
+      "email": "ravi@gmail.com",
+      "contact": "121345",
+      "department": "sales",
+      "id": "ravin",
+      "password": "12345"
     }
   ],
   "loginUser": [],
