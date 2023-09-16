@@ -79,7 +79,7 @@ const Register = () => {
 
     const handleAvailability = (e) => {
         console.log(e.target.value);
-        fetch("https://leave-database-be372-default-rtdb.asia-southeast1.firebasedatabase.app/users.json").then((res) => {
+        fetch("http://localhost:8000/users").then((res) => {
             return res.json();
         }).then((resp) => {
             console.log(resp);
